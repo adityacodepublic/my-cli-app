@@ -1,24 +1,21 @@
 {
-  "name": "get-cli",
-  "version": "0.0.0",
+  "name": "getc",
+  "version": "1.0.0",
   "type": "module",
-  "author": "",
+  "author": "getcli",
   "license": "MIT",
   "description": "cli to get started quickly",
-  "bin": {
-    "getc": "dist/index.mjs"
-  },
+  "exports": "./dist/index.js",
+  "bin": "dist/index.mjs",
   "files": [
     "dist"
   ],
   "scripts": {
-    "dev": "unbuild --stub",
     "build": "unbuild",
+    "dev": "unbuild --stub",
+    "typecheck": "tsc --noEmit",
     "build:out": "unbuild --out",
-    "typecheck": "tsc --noEmit"
-  },
-  "engines": {
-    "node": "^18.0.0 || >=20.0.0"
+    "start": "node ./dist/index.mjs"
   },
   "keywords": [
     "cli"
