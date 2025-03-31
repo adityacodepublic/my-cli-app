@@ -5,8 +5,8 @@
   "author": "getcli",
   "license": "MIT",
   "description": "cli to get started quickly",
-  "exports": "./dist/index.js",
-  "bin": "dist/index.mjs",
+  "exports": "./dist/index.mjs",
+  "bin": "./dist/index.mjs",
   "files": [
     "dist"
   ],
@@ -18,7 +18,8 @@
     "start": "node ./dist/index.mjs"
   },
   "keywords": [
-    "cli"
+    "cli",
+    "getc"
   ],
   "devDependencies": {
     "@eslint/js": "^9.1.1",
